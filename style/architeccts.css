@@ -1,45 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-  }
+}
 
-  /* *{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   } */
-  
-  /* commend style */
-.display-flex{
+
+/* commend style */
+.display-flex {
     display: flex;
 }
 
-
-.bg-color{
-    background: rgba(255, 144, 14, 0.1) ;
+main>section {
+    margin-top: 130px;
 }
-  /* navbar  style*/
+
+.btn-primary {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    border: none;
+    padding: 20px 25px;
+    color: #ffF;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.bg-color {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar  style*/
 .navbar {
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
+
 }
-.list-link{
+
+.list-link {
     list-style: none;
-    
+
 }
-.list-main{
+
+.list-main {
     text-decoration: none;
     margin-right: 20px;
 }
 
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+}
 
-  /* header style */
+/* header style */
 
-  .navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
-  }
+
+}
+
+/*banner content style */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/* Quick section start hear */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.quick {
+    align-items: center;
+}
+
+.quick-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.name-1 {
+    color: rgb(114, 114, 114);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.name-2 {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.name-3 {
+    color: rgb(255, 144, 14);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.quick-description {
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.quick-title {
+    max-width: 537px;
+    margin-left: 130px;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .list-link,
+    .quick {
+        flex-direction: column;
+        gap: 20px 0px;
+    }
+
+    .quick-img {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .quick-title {
+        margin-left:20px;
+    }
+    
+}
