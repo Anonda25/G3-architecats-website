@@ -249,7 +249,9 @@ main {
     }
 
     .fact-container,
-    .our-container {
+    .our-container,
+    .Feature-container 
+     {
         justify-items: center;
         gap: 24px;
     }
