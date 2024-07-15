@@ -279,4 +279,10 @@ main {
     .quick-title {
         margin-left: 10px;
     }
+    .fact-container,
+    .our-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
 }
